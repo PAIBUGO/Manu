@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta para Emanuelle</title>
+</head>
+<body>
+    <audio id="bgAudio" controls autoplay loop preload="auto">
+    <source src="ICARUS.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<!-- Controle de volume -->
+<div style="position: fixed; bottom: 10px; right: 10px; background: rgba(255,255,255,0.8); padding: 5px; border-radius: 5px;">
+    <label for="volumeControl">Volume:</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+<script>
+    const audio = document.getElementById('bgAudio');
+    const volumeControl = document.getElementById('volumeControl');
+
+    // Define o volume inicial
+    audio.volume = 0.5;
+
+    // Altera o volume quando o usuário mexer no controle
+    volumeControl.addEventListener('input', function() {
+        audio.volume = this.value;
+    });
+</script>
+    
+    <div class="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+                <h3 class="happy">FELIZ</h3>
+                <h4 class="bday">ANIVERSARIO</h4> 
+                <h3 class="toyou">Litle P.</h3>  
+            </div>
+            <div class="wrap-deco">
+                <div class="decorations"></div>
+                <div class="decorationsTwo"></div>
+            </div> 
+            <div class="wrap-decoTwo">
+                <div class="decorations"></div>
+                <div class="decorationsThree"></div>
+            </div>
+            <div class="plate">
+                <div class="cake"></div>
+                <div class="flame"></div>
+            </div>
+        </div>  
+
+        <div class="cardInside">
+            <div class="inside-text">
+                <h3 class="happy">PARA</h3>
+                <h2 class="bday">UMA AMIGA</h2> 
+                <h3 class="toyou">ABENÇOADA</h3>  
+            </div>
+            <div class="wishes">
+                <p>Querida Emanuelle,</p>
+                <p>
+                    Em meio às voltas da vida e às nuances do tempo, algumas pessoas aparecem como raios de sol num dia nublado — você é uma delas. Não sei se você percebe o quanto é especial, mas queria que essas palavras fossem como um espelho limpo, onde você possa se ver como realmente é: esplêndida, forte, sensível e cheia de luz.
+                </p>
+                <p>
+                    A vida, às vezes, pesa. Sei que você está enfrentando lutas, e talvez nem todas sejam visíveis aos olhos dos outros. Mas quero que saiba que, mesmo quando o mundo parecer surdo às suas dores, existe alguém aqui que te escuta em silêncio, que ora por você em segredo, que te admira em cada detalhe — com respeito, carinho e uma amizade que não pede nada em troca além de te ver bem.
+                </p>
+                <p>
+                    Você é centrada, determinada, intensa — e mesmo nos seus momentos mais estressados ou quietos, há beleza. Você é daquelas pessoas que deixam marcas boas, que ensinam com atitudes, que curam com gestos, que fazem falta mesmo estando perto. Eu fui e continuo sendo um sortudo por ter cruzado o seu caminho.
+                </p>
+                <p>
+                    Não te escrevo com o peso de um amor que não foi, mas com a leveza de um sentimento que ficou. Porque a amizade verdadeira transcende o que poderia ter sido. Ela permanece, firme, mesmo quando os caminhos mudam. Eu te quero bem, Emanuelle. De verdade. Que você encontre paz onde hoje há tempestade, que você se reencontre em cada pedaço perdido, e que nunca te faltem fé, amor, e pessoas que enxerguem a grandeza do seu coração.
+                </p>
+                <p>
+                    Se em algum momento da vida você precisar de alguém — para rir, chorar, ou apenas existir em silêncio — saiba que estarei aqui. Não por obrigação, mas por escolha. Porque ser teu amigo é um presente que eu honro com gratidão.
+                </p>
+                <p>
+                    <strong>“O Senhor te abençoe e te guarde; o Senhor faça resplandecer o seu rosto sobre ti e te conceda graça; o Senhor volte para ti o seu rosto e te dê paz.”</strong><br>
+                    <em>(Números 6:24-26)</em>
+                </p>
+                <p class="name">Com carinho, <br>Pedrosa</p>
+                <div class="fotos">
+                    <img src="/storage/emulated/0/Pictures/AdobeLightroom/manuzita.jpg" alt="Foto 1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
